@@ -35,6 +35,13 @@ namespace restapiapp.Controllers
             return Json(register);
         }
 
+        [HttpGet]
+        public IActionResult GetAllRegisters()
+        {
+            var registers = _context.Registers.ToList();
+            return Json(registers);
+        }
+
 
     }
 }

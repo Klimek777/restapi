@@ -1,26 +1,28 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{8572973A-3BED-4653-BAE7-81B03F33DD9B}|https">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="restapiapp/Controllers/Register.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="restapiapp/Data/ApplicationDbContext.cs">
     <Files>
-      <File FileName="restapiapp/Program.cs" Line="36" Column="1" />
-      <File FileName="restapiapp/appsettings.json" Line="4" Column="35" />
-      <File FileName="restapiapp/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="restapiapp/Properties/launchSettings.json" Line="1" Column="1" />
-      <File FileName="restapiapp/Models/Register.cs" Line="4" Column="27" />
-      <File FileName="restapiapp/Data/ApplicationDbContext.cs" Line="11" Column="39" />
-      <File FileName="restapiapp/Controllers/Register.cs" Line="29" Column="39" />
-      <File FileName="restapiapp/Controllers/WeatherForecastController.cs" Line="1" Column="1" />
+      <File FileName="restapiapp/Program.cs" />
+      <File FileName="restapiapp/appsettings.json" />
+      <File FileName="restapiapp/appsettings.Development.json" />
+      <File FileName="restapiapp/Properties/launchSettings.json" />
+      <File FileName="restapiapp/Data/ApplicationDbContext.cs" Line="12" Column="1" />
+      <File FileName="restapiapp/Controllers/Register.cs" Line="22" Column="13" />
+      <File FileName="restapiapp/Controllers/WeatherForecastController.cs" />
+      <File FileName="restapiapp/Models/RegisterModel.cs" Line="8" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="restapiapp" expanded="True">
             <Node name="restapiapp" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="Register.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="ApplicationDbContext.cs" selected="True" />
               </Node>
-              <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
