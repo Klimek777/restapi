@@ -19,11 +19,12 @@ builder.Services.AddCors(options => {
         name: MyAllow,
         policy =>
         {
-            policy.WithOrigins("http://localhost:5173").AllowAnyHeader().AllowAnyMethod();
+            policy.WithOrigins("http://localhost:5173", "http://localhost:7105").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().SetIsOriginAllowedToAllowWildcardSubdomains().WithExposedHeaders("Referrer-Policy"); ;
         }
         );
 });
-
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -40,8 +41,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors(MyAllow);
+app.UseSession();
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();

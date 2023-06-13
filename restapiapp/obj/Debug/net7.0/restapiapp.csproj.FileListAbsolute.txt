@@ -74,3 +74,4 @@
 /Users/dawidkl/Projects/restapiapp/restapiapp/obj/Debug/net7.0/restapiapp.pdb
 /Users/dawidkl/Projects/restapiapp/restapiapp/obj/Debug/net7.0/restapiapp.genruntimeconfig.cache
 /Users/dawidkl/Projects/restapiapp/restapiapp/obj/Debug/net7.0/ref/restapiapp.dll
+/Users/dawidkl/Projects/restapiapp/restapiapp/bin/Debug/net7.0/System.Security.Permissions.dll
