@@ -75,3 +75,10 @@
 /Users/dawidkl/Projects/restapiapp/restapiapp/obj/Debug/net7.0/restapiapp.genruntimeconfig.cache
 /Users/dawidkl/Projects/restapiapp/restapiapp/obj/Debug/net7.0/ref/restapiapp.dll
 /Users/dawidkl/Projects/restapiapp/restapiapp/bin/Debug/net7.0/System.Security.Permissions.dll
+/Users/dawidkl/Projects/restapiapp/restapiapp/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/dawidkl/Projects/restapiapp/restapiapp/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/dawidkl/Projects/restapiapp/restapiapp/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/dawidkl/Projects/restapiapp/restapiapp/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/dawidkl/Projects/restapiapp/restapiapp/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/dawidkl/Projects/restapiapp/restapiapp/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/dawidkl/Projects/restapiapp/restapiapp/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll

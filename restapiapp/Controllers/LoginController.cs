@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using restapiapp.Data;
 using restapiapp.Models;
 
@@ -10,6 +14,7 @@ using restapiapp.Models;
 
 namespace restapiapp.Controllers
 {
+    
     [Route("/login")]
     public class LoginController : Controller
     {
@@ -18,6 +23,23 @@ namespace restapiapp.Controllers
         public LoginController(ApplicationDbContext context)
         {
             _context = context;
+        }
+        private string GenerateJwtToken(User user)
+        {
+            var jwtKey = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoidXNlciJ9.FI_Nhrd8CqKObnhWpwBehNEVs69LEgk5AWQlbXdT518"; // Ten sam klucz, który został użyty w Program.cs
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(jwtKey);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+            new Claim(ClaimTypes.Name, user.Email)
+                }),
+                Expires = DateTime.UtcNow.AddHours(1), // Token wygasa po 1 godzinie
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
         }
 
         private bool IsValidUserCredentials(User userCredentials)
@@ -37,6 +59,7 @@ namespace restapiapp.Controllers
             return _context.Users.SingleOrDefault(user => user.Email == userCredentials.Email && user.Password == userCredentials.Password);
         }
 
+       
         [HttpPost]
         [Route("/login/authenticate")]
         public IActionResult Authenticate([FromBody] User userCredentials)
@@ -52,13 +75,12 @@ namespace restapiapp.Controllers
             {
                 return BadRequest("Invalid email or password");
             }
+            // Generuj token JWT
+            var token = GenerateJwtToken(user);
 
-            HttpContext.Session.SetString("UserId", user.Id.ToString());
-            String session = HttpContext.Session.GetString("UserId");
+            return Ok(new { Token = token });
 
 
-
-            return Ok(session);
         }
 
         
