@@ -62,7 +62,7 @@ namespace restapiapp.Controllers
             return Ok(coursesWithAuthors);
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("/course/{courseId}/join")]
         public IActionResult JoinCourse(string courseId)
         {
@@ -70,14 +70,32 @@ namespace restapiapp.Controllers
 
             UserCourse userCourse = new UserCourse
             {
-                CourseId = courseId,
-                UserId = userId
+                UserId = userId,
+                CourseId = courseId
             };
             _context.UserCourses.Add(userCourse);
             _context.SaveChanges();
 
             return Ok("Joining succeeded");
         }
+
+        //[HttpGet]
+        //[Route("/courses/joined")]
+        //public IActionResult MyJoinedCourses(string courseId)
+        //{
+        //    var userId = Request.Headers["userId"];
+
+        //    var joinedCourses = _context.UserCourses
+        //.Where(uc => uc.UserId.ToString() == userId.ToString())
+        //.Select(uc => uc.CourseId.ToString())
+        //.ToList();
+
+        //    var courses = _context.Courses
+        //        .Where(c => joinedCourses.Contains(c.CourseId.ToString()))
+        //        .ToList();
+
+        //    return Ok(courses);
+        //}
 
         [HttpGet]
         [Route("/courses/recently-viewed/read")]
