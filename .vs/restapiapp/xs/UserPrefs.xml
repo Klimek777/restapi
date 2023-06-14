@@ -1,20 +1,26 @@
-﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{8572973A-3BED-4653-BAE7-81B03F33DD9B}|https">
+﻿<Properties StartupConfiguration="{8572973A-3BED-4653-BAE7-81B03F33DD9B}|https" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.restapiapp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="restapiapp/Controllers/LoginController.cs">
     <Files>
       <File FileName="restapiapp/Controllers/Register.cs" />
       <File FileName="restapiapp/Controllers/RegisterController.cs" />
-      <File FileName="restapiapp/Models/Course.cs" />
+      <File FileName="restapiapp/Models/Course.cs" Line="7" Column="2" />
       <File FileName="restapiapp/Models/Module.cs" />
       <File FileName="restapiapp/Data/ApplicationDbContext.cs" />
       <File FileName="restapiapp/Properties/launchSettings.json" />
       <File FileName="restapiapp/appsettings.Development.json" />
-      <File FileName="restapiapp/Program.cs" Line="21" Column="22" />
+      <File FileName="restapiapp/Program.cs" />
       <File FileName="restapiapp/Migrations/ApplicationDbContextModelSnapshot.cs" />
       <File FileName="restapiapp/Migrations/20230613043808_second.cs" />
       <File FileName="restapiapp/Models/User.cs" />
       <File FileName="restapiapp/Controllers/LoginController.cs" Line="63" Column="19" />
       <File FileName="restapiapp/appsettings.json" />
-      <File FileName="restapiapp/Controllers/SessionController.cs" Line="18" Column="42" />
+      <File FileName="restapiapp/Controllers/SessionController.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -36,10 +42,4 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.restapiapp PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

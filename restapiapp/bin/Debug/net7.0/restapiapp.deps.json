@@ -14,6 +14,7 @@
           "Microsoft.AspNetCore.OpenApi": "7.0.2",
           "Microsoft.AspNetCore.Session": "2.2.0",
           "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.7",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
           "Swashbuckle.AspNetCore": "6.4.0"
@@ -156,7 +157,7 @@
       "Microsoft.EntityFrameworkCore/7.0.5": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.5",
-          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.5",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.7",
           "Microsoft.Extensions.Caching.Memory": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0"
@@ -176,7 +177,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/7.0.5": {},
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.7": {},
       "Microsoft.EntityFrameworkCore.Design/7.0.5": {
         "dependencies": {
           "Humanizer.Core": "2.14.1",
@@ -794,12 +795,12 @@
       "path": "microsoft.entityframeworkcore.abstractions/7.0.5",
       "hashPath": "microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/7.0.5": {
+    "Microsoft.EntityFrameworkCore.Analyzers/7.0.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yMLM/aK1MikVqpjxd7PJ1Pjgztd3VAd26ZHxyjxG3RPeM9cHjvS5tCg9kAAayR6eHmBg0ffZsHdT28WfA5tTlA==",
-      "path": "microsoft.entityframeworkcore.analyzers/7.0.5",
-      "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512"
+      "sha512": "sha512-Lvn49Z/fXvJSKp9CpmJ1ZYzmD51sWmELF6ZbN2Avpl7Zgm+gjGkD8fqi50X91obFbKwZGWLPVJU6F1LOMUcKMw==",
+      "path": "microsoft.entityframeworkcore.analyzers/7.0.7",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.7.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Design/7.0.5": {
       "type": "package",

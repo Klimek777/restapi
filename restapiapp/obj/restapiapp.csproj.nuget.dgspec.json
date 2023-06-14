@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/michal/restapi/restapiapp/restapiapp.csproj": {}
+    "/Users/dawidkl/Projects/restapiapp/restapiapp/restapiapp.csproj": {}
   },
   "projects": {
-    "/Users/michal/restapi/restapiapp/restapiapp.csproj": {
+    "/Users/dawidkl/Projects/restapiapp/restapiapp/restapiapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/michal/restapi/restapiapp/restapiapp.csproj",
+        "projectUniqueName": "/Users/dawidkl/Projects/restapiapp/restapiapp/restapiapp.csproj",
         "projectName": "restapiapp",
-        "projectPath": "/Users/michal/restapi/restapiapp/restapiapp.csproj",
-        "packagesPath": "/Users/michal/.nuget/packages/",
-        "outputPath": "/Users/michal/restapi/restapiapp/obj/",
+        "projectPath": "/Users/dawidkl/Projects/restapiapp/restapiapp/restapiapp.csproj",
+        "packagesPath": "/Users/dawidkl/.nuget/packages/",
+        "outputPath": "/Users/dawidkl/Projects/restapiapp/restapiapp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/michal/.nuget/NuGet/NuGet.Config"
+          "/Users/dawidkl/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -61,6 +61,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[7.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",

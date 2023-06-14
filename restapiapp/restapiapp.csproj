@@ -21,6 +21,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="7.0.7" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,6 +34,7 @@
     <None Remove="Models\" />
     <None Remove="Microsoft.AspNetCore.Session" />
     <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
+    <None Remove="Microsoft.EntityFrameworkCore.Analyzers" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />

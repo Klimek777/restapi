@@ -79,23 +79,26 @@ namespace restapiapp.Controllers
             return Ok("Joining succeeded");
         }
 
-        //[HttpGet]
-        //[Route("/courses/joined")]
-        //public IActionResult MyJoinedCourses(string courseId)
-        //{
-        //    var userId = Request.Headers["userId"];
+        [HttpGet]
+        [Route("/courses/joined")]
+        public IActionResult MyJoinedCourses(string courseId)
+        {
+            var userId = Request.Headers["userId"].FirstOrDefault()?.ToString();
 
-        //    var joinedCourses = _context.UserCourses
-        //.Where(uc => uc.UserId.ToString() == userId.ToString())
-        //.Select(uc => uc.CourseId.ToString())
-        //.ToList();
+            var joinedCourses = _context.UserCourses
+        .Where(uc => uc.UserId == userId)
+        .Select(uc => uc.CourseId)
+        .ToList();
 
-        //    var courses = _context.Courses
-        //        .Where(c => joinedCourses.Contains(c.CourseId.ToString()))
-        //        .ToList();
+            var courseIds = joinedCourses.Select(id => id.ToString()).ToList();
 
-        //    return Ok(courses);
-        //}
+
+            var courses = _context.Courses
+       .Where(c => courseIds.Contains(c.CourseId.ToString()))
+       .ToList();
+
+            return Ok(courses);
+        }
 
         [HttpGet]
         [Route("/courses/recently-viewed/read")]
