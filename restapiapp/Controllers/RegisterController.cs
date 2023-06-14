@@ -72,7 +72,7 @@ namespace restapiapp.Controllers
                 return BadRequest("Email address is already registered");
             }
 
-            User user= new User
+            User user = new User
             {
                 Name = userData.Name,
                 Email = userData.Email,

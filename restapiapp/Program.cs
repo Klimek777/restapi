@@ -40,7 +40,7 @@ builder.Services.AddCors(options => {
         {
             policy.WithOrigins("https://localhost:5173", "http://localhost:7105").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
         }
-        );
+      );
 });
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();

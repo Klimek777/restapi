@@ -78,15 +78,10 @@ namespace restapiapp.Controllers
             // Generuj token JWT
             var token = GenerateJwtToken(user);
 
-            return Ok(new { Token = token });
+            return Ok(new { Token = token, userId = user.Id, username = user.Name });
 
 
         }
-
-        
-        
-        
-
     }
 }
 

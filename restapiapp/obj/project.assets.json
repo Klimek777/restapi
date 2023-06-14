@@ -2988,19 +2988,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/dawidkl/.nuget/packages/": {}
+    "/Users/michal/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dawidkl/Projects/restapiapp/restapiapp/restapiapp.csproj",
+      "projectUniqueName": "/Users/michal/restapi/restapiapp/restapiapp.csproj",
       "projectName": "restapiapp",
-      "projectPath": "/Users/dawidkl/Projects/restapiapp/restapiapp/restapiapp.csproj",
-      "packagesPath": "/Users/dawidkl/.nuget/packages/",
-      "outputPath": "/Users/dawidkl/Projects/restapiapp/restapiapp/obj/",
+      "projectPath": "/Users/michal/restapi/restapiapp/restapiapp.csproj",
+      "packagesPath": "/Users/michal/.nuget/packages/",
+      "outputPath": "/Users/michal/restapi/restapiapp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/dawidkl/.nuget/NuGet/NuGet.Config"
+        "/Users/michal/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"

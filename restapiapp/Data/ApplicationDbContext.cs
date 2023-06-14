@@ -13,5 +13,6 @@ public class ApplicationDbContext : IdentityDbContext
     public virtual DbSet<Course> Courses { get; set; }
     public virtual DbSet<User> Users { get; set; }
     public virtual DbSet<Module> Modules { get; set; }
+    public virtual DbSet<UserCourse> UserCourses { get; set; }
 
 }
